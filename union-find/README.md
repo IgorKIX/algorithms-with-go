@@ -37,7 +37,7 @@ Connecting numbers together is creating a relationship where one number becomes 
 The search for main root method is used to check if both numbers are in the same group. So we find the main root for both of the given numbers (that is, the number whose root value points to itself). When this number is identical, it means that both checked numbers are connected with each other.
 
 ex. for better understanding :wink:
-
+```
 id   0 1 2 3 4 5 6 7
 [id] 0 2 0 0 6 5 7 7
 
@@ -46,7 +46,7 @@ id   0 1 2 3 4 5 6 7
   2   3     6
  /         /
 1         4
-
+```
 ### Weighted quick union + path compression
 
 The idea is similar to the previous one, but this time we also keeps the track of how high (how many valuse) got this tree. Thanks to this information we are able to connect only smaller trees to the main root of the bigger one, during the `union` operation. This easy trick help us to avoid the problem of the to high trees.
